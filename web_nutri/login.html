@@ -21,23 +21,26 @@
                         <img src="img/logo.png" style="width: 140px;" alt="logo">
                       </div><br>
       
-                      <form action="">
+                      <form action="php/conn.php" method="post">
                         <p class="fw-bold">Inicie sesión</p>
-      
+
+                        <!--Valor hidden para diferenciar formularios-->
+                        <input type="hidden" name="hidden-login" value="hidden-login">
+
                         <div data-mdb-input-init class="form-outline mb-4">
                             <label class="form-label" for="form2Example11">Nombre de Usuario</label>
-                            <input type="text" id="form2Example11" class="form-control"
+                            <input type="text" id="username" name="username" class="form-control"
                             placeholder="Nombre de Usuario">
                         </div>
       
                         <div data-mdb-input-init class="form-outline mb-4">
                             <label class="form-label" for="">Contraseña</label>
-                            <input type="password" id="" class="form-control" placeholder="Contraseña">
+                            <input type="password" id="password" name="password" class="form-control" placeholder="Contraseña">
                         </div>
       
                         <div class="text-center pt-1 mb-5 pb-1">
                             <div class="mb-3">
-                                <button data-mdb-button-init data-mdb-ripple-init class="btn text-white btn-green" type="button">Iniciar Sesión</button>
+                                <input data-mdb-button-init data-mdb-ripple-init class="btn text-white btn-green" type="submit"></button>
                             </div>
                             <div>
                                 <a class="text-decoration-none links" href="#!">¿Olvidó su contraseña?</a>

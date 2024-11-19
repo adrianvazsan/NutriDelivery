@@ -22,30 +22,33 @@
   
                   <form action="php/conn.php" method="post">
                     <p class="fw-bold">Registrate</p>
-  
+
+                    <!--Valor hidden para diferenciar formularios-->
+                    <input type="hidden" name="hidden-registro" value="hidden-registro">
+
                     <div data-mdb-input-init class="form-outline mb-4">
                         <label class="form-label" for="form2Example11">Nombre de Usuario</label>
                         <input type="text" id="username" name="username" class="form-control"
-                        placeholder="Nombre de Usuario">
+                        placeholder="Nombre de Usuario" required>
                     </div>
                     <div data-mdb-input-init class="form-outline mb-4">
                         <label class="form-label" for="form2Example11">Correo electronico</label>
-                        <input type="text" id="correo" name="correo" class="form-control"
-                        placeholder="Correo electronico">
+                        <input type="email" id="correo" name="correo" class="form-control"
+                        placeholder="Correo electronico" required>
                     </div>
                     <div data-mdb-input-init class="form-outline mb-4">
                         <label class="form-label" for="form2Example11">Numero de telefono</label>
-                        <input type="text" id="telefono" name="telefono" class="form-control"
-                        placeholder="Numero de telefono">
+                        <input type="number" id="telefono" name="telefono" class="form-control"
+                        placeholder="Numero de telefono" required>
                     </div>
   
                     <div data-mdb-input-init class="form-outline mb-4">
                         <label class="form-label" for="">Contraseña</label>
-                        <input type="password" id="password" name="password" class="form-control" placeholder="Contraseña">
+                        <input type="password" id="password" name="password" class="form-control" placeholder="Contraseña" required>
                     </div>
                     <div data-mdb-input-init class="form-outline mb-4">
                         <label class="form-label" for="">Confirmar contraseña</label>
-                        <input type="password" id="confirm_password" name="confirm_password" class="form-control" placeholder="Contraseña">
+                        <input type="password" id="repeat_password" name="repeat_password" class="form-control" placeholder="Contraseña" required>
                     </div>
                     <input type="checkbox" id="acceptTerms" name="acceptTerms" required>
                     <label for="acceptTerms">He leído y acepto los 
