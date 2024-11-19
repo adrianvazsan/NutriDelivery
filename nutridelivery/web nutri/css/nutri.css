@@ -1,6 +1,7 @@
 *{
     text-decoration: none;
     list-style: none;
+    box-sizing: border-box;
 }
 
 body{
@@ -243,6 +244,15 @@ footer{
         border-bottom-right-radius: .3rem;
     }
 }
+.card {
+    width: 101%;   
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0; 
+    padding: 0; 
+}
 
 .btn-green{
     background-color:#00CC76  !important;
@@ -270,12 +280,11 @@ footer{
     left: -75%;
 
     display: block;
-    width: 200%;
-    height: 200%;
+    width: 300%;
+    height: 300%;
 
-    transform: rotate(-45deg);
-    content: attr(data-watermark);
-
+    transform: rotate(-30deg);
+    content: attr(data-watermark);  
     opacity: 0.7;
     line-height: 3em;
     letter-spacing: 2px;
