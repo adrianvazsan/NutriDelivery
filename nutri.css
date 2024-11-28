@@ -2,7 +2,24 @@
     text-decoration: none;
     list-style: none;
 }
+<<<<<<< Updated upstream
 
+=======
+.curve h1{
+    font-size: 6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 0;
+    color: #fff;
+    text-shadow: 2px 2px 2px black;
+
+}
+
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+}
+>>>>>>> Stashed changes
 body{
     height: 100%;
 }
